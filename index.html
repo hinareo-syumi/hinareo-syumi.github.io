@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ひなれお's Kitchen</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #fffaf3;
+}
+
+header {
+  background: #ff9f43;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+nav {
+  background: #ffbe76;
+  text-align: center;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.recipe-card {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.recipe-card img {
+  width: 200px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+footer {
+  background: #ffbe76;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.home-wrap {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 20px 0 10px;
+}
+
+.home-sub {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.home-menu {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.home-btn {
+  background: white;
+  border-radius: 18px;
+  padding: 25px 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.home-btn span {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.home-quick {
+  display:flex;
+  justify-content:center;
+  gap:12px;
+  margin:20px 0;
+}
+
+.home-quick a {
+  background:white;
+  border:2px solid #ffa84d;
+  padding:8px 18px;
+  border-radius:20px;
+  text-decoration:none;
+  color:#ff9f43;
+  font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>ひなれお's Kitchen</h1>
+  <p>おうちごはん記録帳 🍳</p>
+</header>
+
+<nav>
+  <a href="レシピ一覧.html">レシピ一覧</a>
+  <a href="https://ameblo.jp/hinareo101/">ブログ</a>
+</nav>
+
+<div class="home-quick">
+  <a href="レシピ一覧.html?cat=oyatu">🍰 おやつ</a>
+  <a href="レシピ一覧.html?cat=men">🍜 麺</a>
+  <a href="レシピ一覧.html?cat=tyuuka">🔥 中華</a>
+</div>
+
+<section>
+  <h2>お気に入り</h2>
+
+  <div class="recipe-card">
+    <a href="レシピパウンドケーキ.html">
+      <img src="画像パウンドケーキ1.jpg">
+    </a>
+    <div>
+      <h3>パウンドケーキ</h3>
+      <p>ホットケーキミックスで作る</p>
+    </div>
+  </div>
+
+
+  <div class="recipe-card">
+    <a href="レシピ麻婆豆腐.html">
+      <img src="画像麻婆豆腐1.jpg">
+    </a>
+    <div>
+      <h3>麻婆豆腐</h3>
+      <p>調味料から簡単にできる</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 ひなれお's Kitchen
+</footer>
+
+</body>
+</html>

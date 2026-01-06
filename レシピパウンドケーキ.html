@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>パウンドケーキ</title>
+<style>
+body {
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #fffaf3;
+  margin: 0;
+}
+
+header {
+  background: #ff9f43;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  max-width: 800px;
+  background: white;
+  margin: 30px auto;
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.back {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.recipe-material-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  margin: 40px 0;
+}
+
+.material-box {
+  flex: 1;
+}
+
+.material-image {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+.material-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* スマホ表示用 */
+@media (max-width: 600px) {
+
+  section {
+    margin: 15px;
+    padding: 18px;
+  }
+
+  .recipe-material-wrap {
+    flex-direction: column;   /* ← block をやめてこれにする */
+  }
+
+  .material-image {
+    order: -1;                /* ← 画像を一番上 */
+    margin-bottom: 15px;
+  }
+
+  .material-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 0;
+  }
+
+  h1 { font-size: 22px; }
+  h2 { font-size: 17px; }
+
+  ol { padding-left: 20px; }
+
+  li {
+    margin-bottom: 5px;
+    line-height: 1.3;
+  }
+
+  .back {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>パウンドケーキ</h1>
+  <p>ホットケーキミックスとオーブンで作る</p>
+</header>
+
+<section>
+<div class="recipe-material-wrap">
+
+  <div class="material-box">
+    <h2>材料</h2>
+    <ul>
+      <li>ホットケーキミックス 200g</li>
+      <li>卵 2個</li>
+      <li>砂糖 大さじ5</li>
+      <li>牛乳 大さじ4</li>
+      <li>サラダ油 大さじ4</li>
+    </ul>
+  </div>
+
+  <div class="material-image">
+    <img src="画像パウンドケーキ1.jpg">
+  </div>
+
+</div>
+
+<h2>作り方</h2>
+  <ol>
+    <li>卵・砂糖・牛乳・サラダ油をボウルに入れて混ぜる</li>
+    <li>混ざったらホットケーキミックスを入れて混ぜる</li>
+    <li>オーブン180°で10分焼いて一度取り出して上に包丁で切り込みを入れる</li>
+    <li>追加で20分焼く</li>
+　</ol>
+
+  <a class="back" href="index.html">← トップへ戻る</a>
+
+  <a class="back" href="レシピ一覧.html">← レシピ一覧へ戻る</a>
+</section>
+
+</body>
+</html>
